@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="login-container">
+        <img src="logo1.jpg" alt="Logo" class="logo">
+        <h3 class="trademark">ATAP Systems</h3>
+
+        <form id="loginForm">
+            <div class="input-container">
+                <input type="text" id="username" placeholder="Username">
+            </div>
+
+            <div class="input-container">
+                <input type="password" id="password" placeholder="Password">
+                <span class="toggle-password" onclick="togglePassword()">Show</span>
+            </div>
+
+            <button type="submit">Log In</button>
+        </form>
+    </div>
+
+    <div class="popup" id="popup">
+        <div class="popup-content">
+            <p>Incorrect username or password</p>
+            <button onclick="closePopup()">OK</button>
+        </div>
+    </div>
+
+    <script src="loginpage.js"></script>
+</body>
+</html>
