@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logbook</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="logbook-container">
+        <img src="logo1.jpg" alt="Logo" class="logbook-logo">
+        <h1>Cell Monitoring System</h1>
+        <h3 class="trademark">ATAP Systems</h3>
+
+```
+    <form id="logbookForm">
+
+        <label for="cellGroup">Select Cell Group:</label>
+        <select id="cellGroup">
+            <option value="">-- Select --</option>
+            <option>Campus</option>
+            <option>Community</option>
+            <option>Workplace</option>
+            <option>OVE</option>
+        </select>
+
+        <label for="groupType">Select Group Type:</label>
+        <select id="groupType">
+            <option value="">-- Select --</option>
+            <option>Regular</option>
+            <option>New</option>
+        </select>
+
+        <label for="network">Input Network:</label>
+        <input type="text" id="network">
+
+        <label for="cellLeader">Input Cell Leader:</label>
+        <input type="text" id="cellLeader">
+
+        <label for="date">Date:</label>
+        <input type="date" id="date">
+
+        <label for="place">Place:</label>
+        <input type="text" id="place">
+
+        <label for="topic">Topic:</label>
+        <input type="text" id="topic">
+
+        <label for="regularAttendees">Number of Regular Attendees:</label>
+        <input type="number" id="regularAttendees">
+
+        <label for="vips">Number of VIPs:</label>
+        <input type="number" id="vips">
+
+        <label for="attendeesNames">Name of Attendees:</label>
+        <textarea id="attendeesNames"></textarea>
+
+        <button type="submit">Submit</button>
+
+    </form>
+</div>
+
+<div class="popup" id="popup">
+    <div class="popup-content">
+        <p>Please fill up all fields</p>
+        <button id="closePopupBtn">OK</button>
+    </div>
+</div>
+
+<script src="logbook.js"></script>
+
+
+</body>
+</html>
